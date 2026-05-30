@@ -41,9 +41,10 @@
             // 
             // buttonCreaPersona
             // 
-            buttonCreaPersona.Location = new Point(80, 148);
+            buttonCreaPersona.Location = new Point(70, 111);
+            buttonCreaPersona.Margin = new Padding(3, 2, 3, 2);
             buttonCreaPersona.Name = "buttonCreaPersona";
-            buttonCreaPersona.Size = new Size(94, 29);
+            buttonCreaPersona.Size = new Size(82, 22);
             buttonCreaPersona.TabIndex = 0;
             buttonCreaPersona.Text = "Crea";
             buttonCreaPersona.UseVisualStyleBackColor = true;
@@ -52,10 +53,9 @@
             // buttonLeggiProprieta
             // 
             buttonLeggiProprieta.Enabled = false;
-            buttonLeggiProprieta.Location = new Point(83, 264);
-            buttonLeggiProprieta.Margin = new Padding(3, 4, 3, 4);
+            buttonLeggiProprieta.Location = new Point(73, 198);
             buttonLeggiProprieta.Name = "buttonLeggiProprieta";
-            buttonLeggiProprieta.Size = new Size(94, 28);
+            buttonLeggiProprieta.Size = new Size(82, 21);
             buttonLeggiProprieta.TabIndex = 2;
             buttonLeggiProprieta.Text = "button1";
             buttonLeggiProprieta.UseVisualStyleBackColor = true;
@@ -63,10 +63,9 @@
             // 
             // buttonCresci
             // 
-            buttonCresci.Location = new Point(83, 206);
-            buttonCresci.Margin = new Padding(3, 4, 3, 4);
+            buttonCresci.Location = new Point(73, 154);
             buttonCresci.Name = "buttonCresci";
-            buttonCresci.Size = new Size(102, 40);
+            buttonCresci.Size = new Size(89, 30);
             buttonCresci.TabIndex = 5;
             buttonCresci.Text = "cresci";
             buttonCresci.UseVisualStyleBackColor = true;
@@ -75,26 +74,27 @@
             // labelAltezza
             // 
             labelAltezza.AutoSize = true;
-            labelAltezza.Location = new Point(222, 217);
+            labelAltezza.Location = new Point(194, 163);
             labelAltezza.Name = "labelAltezza";
-            labelAltezza.Size = new Size(50, 20);
+            labelAltezza.Size = new Size(38, 15);
             labelAltezza.TabIndex = 6;
             labelAltezza.Text = "label1";
             // 
             // labelNome
             // 
             labelNome.AutoSize = true;
-            labelNome.Location = new Point(198, 149);
+            labelNome.Location = new Point(173, 112);
             labelNome.Name = "labelNome";
-            labelNome.Size = new Size(50, 20);
+            labelNome.Size = new Size(38, 15);
             labelNome.TabIndex = 7;
             labelNome.Text = "label1";
             // 
             // buttonStudente
             // 
-            buttonStudente.Location = new Point(450, 206);
+            buttonStudente.Location = new Point(394, 154);
+            buttonStudente.Margin = new Padding(3, 2, 3, 2);
             buttonStudente.Name = "buttonStudente";
-            buttonStudente.Size = new Size(94, 29);
+            buttonStudente.Size = new Size(82, 22);
             buttonStudente.TabIndex = 8;
             buttonStudente.Text = "Studente";
             buttonStudente.UseVisualStyleBackColor = true;
@@ -103,18 +103,19 @@
             // labelStudente
             // 
             labelStudente.AutoSize = true;
-            labelStudente.Location = new Point(593, 186);
+            labelStudente.Location = new Point(519, 140);
             labelStudente.Name = "labelStudente";
-            labelStudente.Size = new Size(42, 20);
+            labelStudente.Size = new Size(34, 15);
             labelStudente.TabIndex = 9;
             labelStudente.Text = "anno";
             // 
             // buttonPrumuovi
             // 
             buttonPrumuovi.Enabled = false;
-            buttonPrumuovi.Location = new Point(573, 154);
+            buttonPrumuovi.Location = new Point(501, 116);
+            buttonPrumuovi.Margin = new Padding(3, 2, 3, 2);
             buttonPrumuovi.Name = "buttonPrumuovi";
-            buttonPrumuovi.Size = new Size(94, 29);
+            buttonPrumuovi.Size = new Size(82, 22);
             buttonPrumuovi.TabIndex = 10;
             buttonPrumuovi.Text = "promuovi";
             buttonPrumuovi.UseVisualStyleBackColor = true;
@@ -122,16 +123,18 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(382, 241);
+            dateTimePicker1.Location = new Point(334, 181);
+            dateTimePicker1.Margin = new Padding(3, 2, 3, 2);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(243, 27);
+            dateTimePicker1.Size = new Size(213, 23);
             dateTimePicker1.TabIndex = 11;
+            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 451);
+            ClientSize = new Size(700, 338);
             Controls.Add(dateTimePicker1);
             Controls.Add(buttonPrumuovi);
             Controls.Add(labelStudente);
@@ -141,6 +144,7 @@
             Controls.Add(buttonCresci);
             Controls.Add(buttonCreaPersona);
             Controls.Add(buttonLeggiProprieta);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "FormPersona";
             ResumeLayout(false);

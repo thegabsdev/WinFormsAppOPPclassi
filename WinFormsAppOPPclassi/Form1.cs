@@ -15,8 +15,8 @@ namespace WinFormsAppOPPclassi
 
         private void buttonCreaPersona_Click(object sender, EventArgs e)
         {
-            persona1 = new Persona("matteo ", "alvau", 180);
-            
+            persona1 = new Persona("matteo ", "alvau", 180, dateTimePicker1.Value);
+
             buttonLeggiProprieta.Enabled = true;
 
 
@@ -52,10 +52,14 @@ namespace WinFormsAppOPPclassi
             buttonPrumuovi.Enabled = true;
             buttonPrumuovi.Visible = true;
 
-            dataDiNascita = new DateTime(DateTimePicker);
+            mioStudente = new Studente("A", "Pippo", "Rossi", 180, dateTimePicker1.Value);
 
-            mioStudente = new Studente("A", "Pippo", "Rossi", 180);
 
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
 
         }
     }
