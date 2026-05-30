@@ -16,5 +16,9 @@ namespace WinFormsAppOPPclassi
             _sezione = sezione;
             _anno = 1;
         }
+
+
+
+
     }
 }
